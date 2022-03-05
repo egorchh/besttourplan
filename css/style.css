@@ -610,7 +610,7 @@ template {
   line-height: 10px;
 }
 
-.rating__text__counter {
+.rating__counter {
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
@@ -618,7 +618,7 @@ template {
 
 .swiper {
   width: 100%;
-  height: 450px;
+  height: 100%;
   position: relative;
   border-radius: 8px;
 }
@@ -639,6 +639,7 @@ template {
 
 .slider {
   width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -662,7 +663,7 @@ template {
   background-image: url(../img/arrow-next.svg);
 }
 
-.slider-button--next--prev {
+.slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
 }
@@ -790,12 +791,22 @@ template {
 .map {
   width: 347px;
   height: 213px;
-  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
+  }
+  .swiper-slide__image {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
   }
 }
 
@@ -820,9 +831,28 @@ template {
     padding-top: 22px;
     padding-bottom: 22px;
   }
-  .navbar-menu__link {
+  .navbar__link {
     font-size: 12px;
     line-height: 15p;
+  }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .hotel-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+  }
+  .slider {
+    width: 100%;
   }
 }
 
@@ -888,6 +918,23 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .slider {
+    height: 350px;
+  }
+  .hotel-right {
+    min-height: 450px;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -896,6 +943,22 @@ template {
   }
   .container {
     width: 85%;
+  }
+  .slider {
+    height: 250px;
+  }
+  .hotel_slider {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .slider {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .hotel_slider {
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
