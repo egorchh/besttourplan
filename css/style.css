@@ -1029,7 +1029,7 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .swiper-container {
     width: 590px;
   }
   .swiper-slide__image {
@@ -1082,7 +1082,7 @@ template {
             flex-direction: row;
     gap: 30px;
   }
-  .slider {
+  .swiper-container {
     width: 100%;
   }
 }
@@ -1149,7 +1149,7 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
-  .slider {
+  .swiper-container {
     height: 350px;
   }
   .hotel-right {
@@ -1199,7 +1199,7 @@ template {
 }
 
 @media (max-width: 320px) {
-  .slider {
+  .swiper-container {
     height: 200px;
     margin-bottom: 20px;
   }
