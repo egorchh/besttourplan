@@ -918,11 +918,10 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
-  margin-top: 45px;
   padding: 0 62px 30px;
 }
 
@@ -1085,6 +1084,21 @@ template {
   .swiper-container {
     width: 100%;
   }
+  .reviews__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
+  }
+  .reviews-slider__item:after, .reviews-slider__item:before {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1175,6 +1189,36 @@ template {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .reviews__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item:after, .reviews-slider__item:before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 30px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    margin-left: -75px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    margin-right: -75px;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+  }
 }
 
 @media (max-width: 576px) {
@@ -1195,6 +1239,15 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
   }
 }
 
@@ -1223,6 +1276,15 @@ template {
     font-weight: 500;
     font-size: 30px;
     line-height: 38px;
+  }
+  .reviews__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
