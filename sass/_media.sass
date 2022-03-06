@@ -9,6 +9,9 @@
         height: 100%
         object-fit: cover
         width: 100%
+  .card
+    width: 230px
+    height: 230px
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -55,6 +58,15 @@
         &:after,
         &:before
           display: none
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+      justify-content: space-evenly
+      gap: 20px
+  .card
+    width: 340px
+    height: 255px
+
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -137,6 +149,9 @@
           right: 50%
           margin-right: -75px
           transform: translate(50%, 0)
+  .card
+    width: 48%
+    height: 255px
 @media  (max-width: 576px)
   .logo
     width: 99px
@@ -160,6 +175,12 @@
       text-align: center
       text-transform: uppercase
       margin-bottom: 30px
+  .activities
+    padding-top: 0px
+    &__title
+      margin-bottom: 30px
+  .card
+    width: 100%
 @media  (max-width: 320px)
   .swiper-container
     height: 200px
@@ -189,3 +210,12 @@
       text-align: center
       text-transform: uppercase
       margin-bottom: 25px
+  .activities
+    padding-top: 0px
+    &__title
+      margin-bottom: 30px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-transform: uppercase
