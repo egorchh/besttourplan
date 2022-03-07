@@ -1,0 +1,31 @@
+.packages
+  padding: 40px 0 70px 0
+  &-wrapper
+    display: grid
+    grid-template-rows: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr)
+    gap: 30px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 65px
+    margin-top: 0
+  &-cell
+    &__image
+      object-fit: cover
+      &--big
+        max-height: 500px
+        max-width: 366px
+    &--1
+      display: flex
+      grid-column: span 2
+  &-info
+    &--big
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 47px 21px 30px 44px
