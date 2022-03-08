@@ -54,18 +54,7 @@
         bottom: 0
         z-index: 10
     &__button
-      width: 30px
-      height: 30px
-      border: none
-      z-index: 99
-      position: absolute
-      top: 50%
-      transform: translateY(-50% )
-      cursor: pointer
-      background-repeat: no-repeat
-      background-position: center
-      background-size: 10px
-      background-color: transparent
+      @include slider-buttons($width: 30px, $height: 30px)
       &--next
         right: 18px
         background-image: url(../img/arrow-next.svg)

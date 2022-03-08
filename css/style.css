@@ -500,7 +500,7 @@ template {
   margin-right: 4px;
 }
 
-.breadcrumb-list__link {
+.breadcrumb-list__item:not(:last-child)__link {
   text-decoration: none;
   color: inherit;
 }
@@ -610,11 +610,11 @@ template {
 }
 
 .hotel-slider__button {
+  position: absolute;
   width: 30px;
   height: 30px;
   border: none;
   z-index: 99;
-  position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1156,18 +1156,18 @@ template {
 
 .reviews-slider__button {
   position: absolute;
+  width: 30px;
+  height: 30px;
+  border: none;
+  z-index: 99;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-size: 10px;
-  background-position: center;
-  border: none;
-  background-color: transparent;
-  z-index: 10;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
 }
 
 .reviews-slider__button--prev {

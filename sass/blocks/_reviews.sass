@@ -38,18 +38,7 @@
         width: 70px
         height: 47px
     &__button
-      position: absolute
-      top: 50%
-      transform: translateY(-50%)
-      width: 30px
-      height: 30px
-      background-repeat: no-repeat
-      background-size: 10px
-      background-position: center
-      border: none
-      background-color: transparent
-      z-index: 10
-      cursor: pointer
+      @include slider-buttons($width: 30px, $height: 30px)
       &--prev
         background-image: url(../img/arrow-secondary-prev.svg)
         left: 0
