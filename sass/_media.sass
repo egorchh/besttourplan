@@ -12,6 +12,14 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    padding-top: 0
+    &__title
+      margin-bottom: 55px
+    &-cell
+      &__image
+        &--small
+          height: 233.33px
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -66,7 +74,12 @@
   .card
     width: 340px
     height: 255px
-
+  .packages
+    &-cell
+      &--1
+        display: none
+    &-wrapper
+      grid-template-columns: repeat(2, 1fr)
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -152,6 +165,28 @@
   .card
     width: 48%
     height: 255px
+  .packages
+    &__title
+      font-size: 30px
+      margin-bottom: 40px
+    &-cell
+      &__image
+        &--small
+          height: 216px
+    &-info
+      &__price
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-evenly
+        margin-bottom: 10px
+        &-strong
+          margin: 0
+      &__booking
+        display: block
+      &__button
+        width: 100%
+
 @media  (max-width: 576px)
   .logo
     width: 99px
@@ -181,6 +216,42 @@
       margin-bottom: 30px
   .card
     width: 100%
+  .packages
+    &__title
+      font-size: 25px
+      margin-bottom: 30px
+    &-cell
+      &--five-star
+        display: none
+    &-wrapper
+      gap: 15px
+      grid-template-columns: 1fr
+      grid-template-rows: 3fr
+    &-info
+      &__booking
+        &--common
+          display: flex
+          justify-content: space-between
+          align-items: flex-end
+      &__price
+        display: flex
+        flex-direction: column
+        margin-bottom: 6px
+        align-items: flex-start
+        &-sale
+          font-style: normal
+          font-weight: normal
+          font-size: 12px
+          line-height: 18px
+          text-decoration-line: line-through
+        &-strong
+          font-style: normal
+          font-weight: bold
+          font-size: 20px
+          line-height: 30px
+          margin-top: 5px
+      &__button
+        max-width: 130px
 @media  (max-width: 320px)
   .swiper-container
     height: 200px
@@ -219,3 +290,7 @@
       font-size: 18px
       line-height: 23px
       text-transform: uppercase
+  .packages
+    &-info
+      &__button
+        max-width: 125px
