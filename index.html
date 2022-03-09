@@ -530,7 +530,7 @@
       <div class="container">
         <div class="footer-wrapper">
           <img class="logo footer__logo" src="img/vertical-logo.svg" alt="Logo: Best Tour Plan">
-          <div class="footer__list">
+          <div class="footer__list footer__categories">
             <h3 class="footer__title">All categories</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -560,7 +560,7 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__list">
+          <div class="footer__list footer__additional">
             <h3 class="footer__title">Additional information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -585,22 +585,22 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__social-network">
-            <h3 class="footer__title">Social Network</h3>
+            <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
               <a class="footer__link" href="#">
-                <img class="footer__icon" src="img/fb.svg" alt="Icon: Facebook">
+                <img src="img/fb.svg" alt="Icon: Facebook">
               </a>
               <a class="footer__link" href="#">
-                <img class="footer__icon" src="img/yt.svg" alt="Icon: YouTube">
+                <img src="img/yt.svg" alt="Icon: YouTube">
               </a>
               <a class="footer__link" href="#">
-                <img class="footer__icon" src="img/inst.svg" alt="Icon: Instagram">
+                <img src="img/inst.svg" alt="Icon: Instagram">
               </a>
             </div>
             <!-- /.footer__social-links -->
           </div>
           <!-- /.footer__social-network -->
-          <div class="footer__list">
+          <div class="footer__list footer__legal">
             <h3 class="footer__title">Legal information</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -619,30 +619,39 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-details">
-            <h3 class="footer__title">Contact Details</h3>
+            <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
             <ul class="footer__ul">
-              <li class="footer__item">
-                <img src="img/map-pin.svg" alt="Icon: map-marker">
+              <li class="footer__item footer__item--mb-2">
+                <img class="footer__icon" src="img/map-pin.svg" alt="Icon: map-marker">
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
               </li>
-              <li class="footer__item">
-                <img src="img/phone.svg" alt="Icon: phone">
+              <li class="footer__item footer__item--mb-2">
+                <img class="footer__icon" src="img/phone.svg" alt="Icon: phone">
                   Tel (business hours) : 269 1500 <br>
                   Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
                   Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm) 
               </li>
-              <li class="footer__item">
-                <img src="img/mail.svg" alt="Icon: mail">
+              <li class="footer__item footer__item--mb-2">
+                <img class="footer__icon" src="img/mail.svg" alt="Icon: mail">
                 cherly.lawson@example.com
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title">Send us a message</h3>
+            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+            <form class="footer__form" action="#">
+              <input class="input footer__input" type="text" placeholder="Your Full Name*">
+              <input class="input footer__input" type="text" placeholder="Phone Number*">
+              <textarea class="footer__message" cols="30" rows="10" placeholder="Message*"></textarea>
+              <button class="button footer__button">
+                Send
+              </button>
+              <span class="footer__info">* Required Fields</span>
+            </form>
           </div>
         </div>
         <!-- /.footer-wrapper -->
