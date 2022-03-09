@@ -98,9 +98,31 @@
     line-height: 15px
     border-radius: 4px
     color: #fff
+    margin-bottom: 122px
   &__info
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
     color: $footer-text-color
+  &-disclaimer
+    &__wrapper
+      display: grid
+      grid-template-columns: 136px 1fr 136px
+    &__list
+      grid-column: 2 / 3
+      display: flex
+      justify-content: center
+      align-items: flex-end
+      gap: 18px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+    &__link
+      text-decoration: none
+      color: $footer-text-color
+    &__image
+      grid-column: 3 / 4
+      width: 136px
+      height: 22px
