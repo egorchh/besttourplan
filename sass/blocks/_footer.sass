@@ -5,7 +5,7 @@
   padding-bottom: 46px
   &-wrapper
     display: grid
-    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-template-columns: minmax(min-content, 1fr) 200px repeat(2, minmax(min-content, 1fr))
     grid-gap: 24px
     grid-auto-rows: minmax(40px, min-content)
   &__logo
@@ -98,7 +98,7 @@
     line-height: 15px
     border-radius: 4px
     color: #fff
-    margin-bottom: 122px
+    cursor: pointer
   &__info
     font-style: normal
     font-weight: bold
@@ -109,6 +109,7 @@
     &__wrapper
       display: grid
       grid-template-columns: 136px 1fr 136px
+      margin-top: 122px
     &__list
       grid-column: 2 / 3
       display: flex
